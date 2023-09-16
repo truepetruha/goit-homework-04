@@ -103,23 +103,28 @@ section {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .nav-link:hover, .nav-link:focus {
     color: #404bbf;
 }
 
-.nav-link:active {
-    color: #404BBF;
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #404BBF;
+    transition-property: width height;
 }
 
-.address-link {
-    color: #434455;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    font-style: normal;
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:active {
+    color: #404BBF;
 }
 
 .address-link-add {
@@ -132,13 +137,32 @@ section {
     gap: 40px;
 }
 
-.contact-info a:hover {
+.contact-info a:hover, .contact-info a:focus {
     color: #404bbf;
 }
 
-.contact-info a:focus {
-    color: #404BBF;
+.address-link {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-style: normal;
 }
+
+.address-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #404BBF;
+    transition-property: width height;
+}
+
+.address-link:hover::after {
+    width: 100%;
+}
+
 /*END Header */
 
 /* Section 1 Effective Solutions for Your Business */
@@ -146,6 +170,11 @@ section {
     background-color: #2E2F42;
     text-align: center;
     padding: 188px 0;
+    background-image: url(../images/people-office\.jpg);
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-title {
@@ -200,6 +229,17 @@ section {
 
 .advantage-item {
     flex-basis: calc((100% - 72px) / 4);
+}
+
+.advantage-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #F4F4FD;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 .advantage-title {
