@@ -358,4 +358,18 @@ section {
     letter-spacing: 0.02em;
     max-width: 264px;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
 /* End footer*/
