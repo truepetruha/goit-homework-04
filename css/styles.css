@@ -139,13 +139,13 @@ section {
 
 .address-link-add {
     font-style: normal;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-info {
     font-style: normal;
     display: flex;
     gap: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-info a:hover, .contact-info a:focus {
@@ -187,6 +187,8 @@ section {
         url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    max-width: 1440px;
 }
 
 .hero-title {
@@ -216,6 +218,7 @@ section {
     min-width: 169px;
     border-radius: 4px;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-primary:focus {
