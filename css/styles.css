@@ -382,13 +382,12 @@ section {
     padding: 100px 0;
 }
 
-.container-footer {
+.footer-content {
     display: flex;
     align-items: baseline;
 }
 
-.footer-content {
-    margin-left: 156px;
+.footer-advice {
     margin-right: 120px;
 }
 
@@ -411,6 +410,7 @@ section {
 
 .footer-p {
     line-height: 1.5;
+    color: #f4f4fd;
     letter-spacing: 0.02em;
     max-width: 264px;
 }
