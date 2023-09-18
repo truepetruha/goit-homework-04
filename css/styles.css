@@ -330,14 +330,9 @@ section {
     gap: 24px;
 }
 
-.soc-li {
+.social-link {
     width: 40px;
     height: 40px;
-}
-
-.social-link {
-    width: 100%;
-    height: 100%;
     background-color: #4d5ae5;
     border-radius: 50%;
     display: flex;
